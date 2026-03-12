@@ -99,12 +99,12 @@ def rag_simple(query, retriever, llm, top_k=3):
     context = "\n\n".join([doc["content"] for doc in results]) if results else ""
     if not context:
         return "No Relevant Context Found to answer the question"
-    prompt = f"""You are Tashif's personal AI assistant. Answer the question naturally and conversationally using the information provided.
-Never say phrases like "based on the context", "according to the document", "the context mentions" or anything similar.
-Just answer directly and naturally as if you already know this information.
+    prompt = f"""You are a professional CV assistant. Answer questions about the candidate's background, skills, and experience in a clear and professional tone.
+Never say phrases like "based on the context", "according to the document", or "the context mentions".
+Answer directly and professionally as if you are presenting the candidate's profile.
 If the answer is not available, simply say "I don't have that information."
 
-Information:
+CV Information:
 {context}
 
 Question:
