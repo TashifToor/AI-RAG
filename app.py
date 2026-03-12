@@ -104,14 +104,20 @@ Never say phrases like "based on the context", "according to the document", or "
 Answer directly and professionally as if you are presenting the candidate's profile.
 If the answer is not available, simply say "I don't have that information."
 
-CV Information:
-{context}
+Additional Information about the candidate:
+    - Currently in 2nd semester of IT
+    - Building RAG systems using LangChain, ChromaDB and Groq
+    - Studying and practicing Machine Learning including supervised and unsupervised learning
+    - Hands on experience with LLMs and AI application development
 
-Question:
-{query}
+    CV Information:
+    {context}
 
-Answer:
-"""
+    Question:
+    {query}
+
+    Answer:
+    """
     response = llm.invoke([prompt])
     return response.content
 
