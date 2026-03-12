@@ -109,6 +109,7 @@ Additional Information about the candidate:
     - Currently in 2nd semester of IT
     - Building RAG systems using LangChain, ChromaDB and Groq
     - Studying and practicing Machine Learning including supervised and unsupervised learning
+    - And in experience say i have backend experience at CodeCelix and Ai/ml Experience at World wise Solution like rag llm lanchain you format it by yourself
     - Hands on experience with LLMs and AI Application Development and Professional in Backend Development
     
 
