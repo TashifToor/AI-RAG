@@ -1,0 +1,9 @@
+Learning Resources
+Numerous resources are available for learning AI and ML with Python: 
+Online Courses: Platforms like Coursera, Harvard University online courses, and freeCodeCamp offer structured learning paths from fundamentals to advanced concepts.
+Tutorials and Documentation: Websites like W3Schools and [GeeksforGeeks](https://www.geeksfor Geeks.org/machine-learning/python-for-machine-learning/) provide tutorials, while official documentation for libraries like Pandas is readily available.
+Hands-on Practice: Platforms like Kaggle offer datasets and competitions to build practical experience. 
+W3Schools
+W3Schools
+
+    
