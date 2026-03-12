@@ -99,13 +99,19 @@ def rag_simple(query, retriever, llm, top_k=3):
     context = "\n\n".join([doc["content"] for doc in results]) if results else ""
     if not context:
         return "No Relevant Context Found to answer the question"
-    prompt = f"""Use The Following Context to Answer The Question Precisely.
-    Context:
-    {context}
-    Question:
-    {query}
-    Answer:
-    """
+    prompt = f"""You are Tashif's personal AI assistant. Answer the question naturally and conversationally using the information provided.
+Never say phrases like "based on the context", "according to the document", "the context mentions" or anything similar.
+Just answer directly and naturally as if you already know this information.
+If the answer is not available, simply say "I don't have that information."
+
+Information:
+{context}
+
+Question:
+{query}
+
+Answer:
+"""
     response = llm.invoke([prompt])
     return response.content
 
